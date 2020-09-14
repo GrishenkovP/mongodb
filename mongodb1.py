@@ -34,7 +34,7 @@ project_list = [{"name": "A2","description": "SQL data warehouse","tags": ["db",
            ]
 result_insert = projects.insert_many(project_list)
 
-# Проверяем, что коллекция projects физически создалась в БД.
+# Проверяем, что коллекция projects физически создалась в БД
 print(db.list_collection_names())
 
 # Получение певого документа из коллекции

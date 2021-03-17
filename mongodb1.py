@@ -37,7 +37,7 @@ result_insert = projects.insert_many(project_list)
 # Проверяем, что коллекция projects физически создалась в БД
 print(db.list_collection_names())
 
-# Получение певого документа из коллекции
+# Получение первого документа из коллекции
 project_first = projects.find_one()
 print(project_first)
 
@@ -57,6 +57,4 @@ for i in projects.find().sort("name"):
 for i in projects.find({},{"name":1,"_id":0}).sort("name"):
     pprint.pprint(i)
 
-# Логические операторы (работает только в MongoDB Compass)
-# for i in projects.find({$or:[{"name":"A1"},{"tags": "scala"}]}):
-#     pprint.pprint(i)
+

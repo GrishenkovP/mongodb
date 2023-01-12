@@ -1,2 +1,2 @@
-# MongoDB
+# mongodb
 Конспекты по работе с MongoDB
